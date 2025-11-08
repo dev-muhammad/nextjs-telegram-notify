@@ -1,0 +1,33 @@
+# Source files
+src
+examples
+*.ts
+!*.d.ts
+
+# Config files
+tsconfig.json
+tsup.config.ts
+.eslintrc*
+.prettierrc*
+
+# Development
+.git
+.github
+node_modules
+*.log
+
+# Documentation
+design.md
+
+# Tests
+__tests__
+*.test.ts
+*.spec.ts
+coverage
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+.DS_Store

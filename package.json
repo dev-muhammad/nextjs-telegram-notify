@@ -1,0 +1,85 @@
+{
+  "name": "nextjs-telegram-notify",
+  "version": "1.0.0",
+  "description": "A Next.js package for sending notifications to Telegram. Perfect for forms, bug reports, feedback, and any notification needs.",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs"
+    },
+    "./server": {
+      "types": "./dist/server.d.ts",
+      "require": "./dist/server.js",
+      "import": "./dist/server.mjs"
+    },
+    "./route": {
+      "types": "./dist/route.d.ts",
+      "require": "./dist/route.js",
+      "import": "./dist/route.mjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src --ext .ts,.tsx",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "nextjs",
+    "telegram",
+    "notifications",
+    "bot",
+    "forms",
+    "bug-report",
+    "feedback",
+    "contact-form",
+    "typescript",
+    "react"
+  ],
+  "author": "dev-muhammad",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dev-muhammad/nextjs-telegram-notify"
+  },
+  "homepage": "https://github.com/dev-muhammad/nextjs-telegram-notify#readme",
+  "bugs": {
+    "url": "https://github.com/dev-muhammad/nextjs-telegram-notify/issues"
+  },
+  "peerDependencies": {
+    "next": ">=13.0.0",
+    "react": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@jest/globals": "^30.2.0",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.0",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^20.10.0",
+    "@types/react": "^18.2.45",
+    "jest": "^30.2.0",
+    "jest-environment-jsdom": "^30.2.0",
+    "next": "^15.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "ts-jest": "^29.4.5",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
