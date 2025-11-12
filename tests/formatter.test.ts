@@ -16,7 +16,6 @@ describe('Formatter Utilities', () => {
       const formatted = formatMessageWithTimestamp(message);
 
       expect(formatted).toContain('Test message');
-      expect(formatted).toContain('⏰'); // Clock emoji
       expect(formatted).toMatch(/\d{1,2}, \d{4}/); // Date format like "Nov 7, 2025"
     });
 
@@ -27,12 +26,11 @@ describe('Formatter Utilities', () => {
       expect(formatted).toContain('Line 1');
       expect(formatted).toContain('Line 2');
       expect(formatted).toContain('Line 3');
-      expect(formatted).toContain('⏰');
     });
 
     it('should handle empty message', () => {
       const formatted = formatMessageWithTimestamp('');
-      expect(formatted).toContain('⏰');
+      expect(formatted).toMatch(/\d{1,2}, \d{4}/); // Date format like "Nov 7, 2025"
     });
   });
 
@@ -315,7 +313,6 @@ describe('Formatter Utilities', () => {
       expect(notification).toContain('<b>New Message</b>');
       expect(notification).toContain('from: John Doe');
       expect(notification).toContain('message: You have a new message');
-      expect(notification).toContain('⏰'); // timestamp
     });
 
     it('should include emoji when provided', () => {
@@ -337,7 +334,7 @@ describe('Formatter Utilities', () => {
         includeTimestamp: false,
       });
 
-      expect(notification).not.toContain('⏰');
+      expect(notification).not.toContain(/\d{1,2}, \d{4}/); // Date format like "Nov 7, 2025"
     });
 
     it('should handle multiple fields', () => {
@@ -366,7 +363,7 @@ describe('Formatter Utilities', () => {
       });
 
       expect(notification).toContain('<b>Empty</b>');
-      expect(notification).toContain('⏰'); // timestamp still included
+      expect(notification).toMatch(/\d{1,2}, \d{4}/); // Date format like "Nov 7, 2025"
     });
   });
 

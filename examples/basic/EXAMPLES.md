@@ -125,7 +125,7 @@ npm run dev
 📧 Email: john@example.com
 💬 Message: Hello, I'm interested...
 
-⏰ 11/7/2025, 10:30 AM
+11/7/2025, 10:30 AM
 ```
 
 ### Bug Report

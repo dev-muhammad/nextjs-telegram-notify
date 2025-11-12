@@ -117,7 +117,7 @@ export default function ContactForm() {
 📧 Email: ${formData.email}
 💬 Message: ${formData.message}
 
-⏰ ${new Date().toLocaleString()}
+${new Date().toLocaleString()}
     `.trim();
 
     await send({ message, parseMode: 'HTML' });
