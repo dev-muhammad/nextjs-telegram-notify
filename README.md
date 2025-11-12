@@ -4,7 +4,6 @@ A lightweight Next.js package for sending notifications to Telegram. Perfect for
 
 [![npm version](https://badge.fury.io/js/nextjs-telegram-notify.svg)](https://www.npmjs.com/package/nextjs-telegram-notify)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![Test](https://github.com/dev-muhammmad/nextjs-telegram-notify/actions/workflows/test.yml/badge.svg)](https://github.com/dev-muhammmad/nextjs-telegram-notify/actions/workflows/test.yml)
 [![codecov](https://codecov.io/gh/dev-muhammmad/nextjs-telegram-notify/branch/main/graph/badge.svg)](https://codecov.io/gh/dev-muhammmad/nextjs-telegram-notify)
 
 ## ✨ Features
