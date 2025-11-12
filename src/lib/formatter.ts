@@ -7,7 +7,7 @@ export function formatMessageWithTimestamp(message: string): string {
     timeStyle: 'short',
   });
 
-  return `${message}\n\n⏰ ${timestamp}`;
+  return `${message}\n\n ${timestamp}`;
 }
 
 /**
@@ -112,7 +112,7 @@ export function createNotification(options: {
       dateStyle: 'medium',
       timeStyle: 'short',
     });
-    message += `\n⏰ ${timestamp}`;
+    message += `\n ${timestamp}`;
   }
 
   return message.trim();

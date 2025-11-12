@@ -1,6 +1,6 @@
 {
   "name": "nextjs-telegram-notify",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A Next.js package for sending notifications to Telegram. Perfect for forms, bug reports, feedback, and any notification needs.",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
