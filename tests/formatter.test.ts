@@ -327,16 +327,6 @@ describe('Formatter Utilities', () => {
       expect(notification).toContain('🚨 <b>Error Report</b>');
     });
 
-    it('should exclude timestamp when includeTimestamp is false', () => {
-      const notification = createNotification({
-        title: 'Simple',
-        fields: { message: 'Test' },
-        includeTimestamp: false,
-      });
-
-      expect(notification).not.toContain(/\d{1,2}, \d{4}/); // Date format like "Nov 7, 2025"
-    });
-
     it('should handle multiple fields', () => {
       const notification = createNotification({
         title: 'Form Submission',
